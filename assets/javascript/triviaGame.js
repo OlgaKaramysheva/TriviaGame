@@ -6,7 +6,9 @@ function start() {
     setInterval(count, 1000);
 
     // Hide the overlay with the Start button
-    document.getElementById("overlay").style.display = "none";
+    //document.getElementById("overlay").style.display = "none";
+    $("#overlay").hide();
+
 }
 
 
@@ -98,7 +100,8 @@ function endGame(){
     }
 
     // Make results visible
-    document.getElementById("result").style.display = "block";
+    //document.getElementById("result").style.display = "block";
+    $("#result").show();
 
     // Show results on HTML
     $("#correct").text("Correct: " + correct);

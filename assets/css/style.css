@@ -1,3 +1,6 @@
+/* body {
+    margin-top: 25px;
+} */
 p, h1, h3, label {
     opacity: 1;
     font-family: 'Cinzel', serif;
@@ -17,6 +20,7 @@ h1 {
 
 #overlay {
     position: fixed;
+    padding-top: 25px;
     width: 100%;
     height: 100%;
     background-color: grey;
@@ -31,6 +35,7 @@ button {
 }
 
 #result {
+    padding-top:100px;
     display: none;
     margin: 0 auto;
 }
