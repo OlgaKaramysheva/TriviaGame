@@ -1,0 +1,44 @@
+p, h1, h3, label {
+    opacity: 1;
+    font-family: 'Cinzel', serif;
+    color:black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold
+}
+
+.question {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 2;
+}
+
+button { 
+    font-family: 'Cinzel', serif;
+    font-size: 30pt;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+#result {
+    display: none;
+    margin: 0 auto;
+}
+
+img {
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

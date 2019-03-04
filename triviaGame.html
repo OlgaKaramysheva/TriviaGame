@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+    <div id="overlay">
+        <button onclick="start()">Start</button>
+    </div>
+
+    <img src="https://media.wired.com/photos/5a78f50d80d49606fed71cf0/master/w_1164,c_limit/electricbrain-871025390-%5BConverted%5D.jpg" alt="">
+    
+    <div class="container">
+
+        <div class="row">
+            <h1>Totally Trivial Trivia!</h1>
+        </div>
+
+        <div class="row">
+                <h3 id="timeLeft">Time Remaining: 15s</h3>
+        </div>
+
+        <br>
+
+        <div class="question">
+
+            <div>
+                <p>Trigeminal nerve is 5th cranial nerve.</p>
+                
+                <input type="radio" name="answer1" onclick="radio1('correct')">
+                <label for="answer1">True</label>
+                
+                <input type="radio" name="answer1" onclick="radio1()">
+                <label for="answer1">False</label>
+            </div>
+
+            <div>
+                <p>Plantar refers to palm of hand.</p>
+                
+                <input type="radio" name="answer2" onclick="radio2('')">
+                <label for="answer2">True</label>
+                
+                <input type="radio" name="answer2" onclick="radio2('correct')">
+                <label for="answer2">False</label>
+            </div>
+
+            <div>
+                <p>Blood is a connective tissue.</p>
+                
+                <input type="radio" name="answer3" onclick="radio3('correct')">
+                <label for="answer3">True</label>
+                
+                <input type="radio" name="answer3" onclick="radio3()">
+                <label for="answer3">False</label>
+            </div>
+            
+            <div id="result">
+                    <p id="correct">Correct: 0</p>
+                    <p id="incorrect">Incorrect: 0</p>
+                    <p id="unselected">Unanswered: 0</p>
+            </div>
+            
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="assets/javascript/triviaGame.js"></script>   
+</body>
+</html>
